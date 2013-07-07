@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'FontCandara';
+    src: url('../Candara.woff') format('woff'), 
+        url('../Candara.ttf') format('truetype'); /* Modern Browsers */
+}
+
+@font-face {
+    font-family: 'FontSegoeUI';
+    src: url('../SegoeUI.woff') format('woff'), 
+        url('../SegoeUI.ttf') format('truetype'); /* Modern Browsers */
+}
+
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #302e2e;
+    text-align: center;
+}
+
+p {
+    font-family: 'FontCandara', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.effect1Container {
+    background: linear-gradient(to right, #333333 0%,#3f322a 4%,#fc9b13 50%,#3f322a 97%,#333333 98%);
+    height: 10px;
+    width: 120px;
+    margin-top: -6px;
+    position: relative;
+    animation: headerEffect 5s infinite;
+    -webkit-animation: headerEffect 3s infinite;
+}
+
+@keyframes headerEffect {
+    0% {
+        left: -20%;
+        opacity: 0;
+    }
+
+    50% {
+        left: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes headerEffect {
+    0% {
+        left: -20%;
+        opacity: 0;
+    }
+
+    50% {
+        left: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+
+.header-bg {
+    background-color: #fc9b13;
+    height: 60px;
+    z-index: 100;
+    position: relative;
+}
+
+.floater {
+    float: left;
+    height: 50%;
+    margin-bottom: 50px;
+}
+
+.content {
+    clear: both;
+    height: 300px;
+    position: relative;
+}
+
+.logotitle {
+    text-align: center;
+}
+
+.logotitle1 {
+    font-size: 70px;
+}
+
+.logotitle2 {
+    font-size: small;
+}
+
+.alltext {
+    font-family: 'FontCandara', Arial, sans-serif;
+    color: white;
+}
+
+.btnPrimary {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 8px;
+    background-color: #fc9b13;
+    color: white;
+    font-family: 'FontSegoeUI', Arial, sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
