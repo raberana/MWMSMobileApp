@@ -1,13 +1,11 @@
 @font-face {
     font-family: 'FontCandara';
-    src: url('../Candara.woff') format('woff'), 
-        url('../Candara.ttf') format('truetype'); /* Modern Browsers */
+    src: url('../Candara.woff') format('woff'), url('../Candara.ttf') format('truetype'); /* Modern Browsers */
 }
 
 @font-face {
     font-family: 'FontSegoeUI';
-    src: url('../SegoeUI.woff') format('woff'), 
-        url('../SegoeUI.ttf') format('truetype'); /* Modern Browsers */
+    src: url('../SegoeUI.woff') format('woff'), url('../SegoeUI.ttf') format('truetype'); /* Modern Browsers */
 }
 
 body {
@@ -109,6 +107,19 @@ p {
 .alltext {
     font-family: 'FontCandara', Arial, sans-serif;
     color: white;
+}
+
+.btnCommon {
+    width: 250px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 8px;
+    background-color: #fc9b13;
+    color: white;
+    font-family: 'FontSegoeUI', Arial, sans-serif;
+    display: block;
 }
 
 .btnPrimary {

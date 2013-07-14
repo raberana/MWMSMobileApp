@@ -7,6 +7,11 @@ mwmsApp.config(function ($routeProvider) {
         controller: 'HomeController',
         templateUrl: '/partials/home.html'
     })
+    .when('/menu/:userId',
+    {
+        controller: 'MenuController',
+        templateUrl: '/partials/menu.html'
+    })
     .otherwise({ redirectTo: '/main' });
 });
 

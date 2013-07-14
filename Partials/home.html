@@ -3,22 +3,17 @@
     <div class="logotitle logotitle2 alltext" style="margin-top: -15px">Mobile Waterflow Monitoring System</div>
 </div>
 <div style="margin-top: 60px; text-align: center">
-    <div class="alltext">
+     <div class="alltext">
         USERNAME:
-                        <input type="text" id="loginUname" />
+                        <input type="text" id="loginUname" data-ng-model="loginUserName"/>
     </div>
     <div class="alltext">
         PASSWORD:
-                        <input type="password" id="loginPassword" />
+                        <input type="password" id="loginPassword" data-ng-model="loginPassword"/>
     </div>
-    <div id="signInBtn" class="btnPrimary" style="margin-top: 15px">
+
+    <div id="signInBtn" class="btnPrimary" style="margin-top: 15px" data-ng-click="login()">
         SIGN IN
     </div>
 
-    <button data-ng-click="showUsers()">SHOW ALL ACTIVE USERS</button>
-    <ul>
-        <li data-ng-repeat="user in users">
-            {{user.UserName}} - {{user.ClientId}}
-        </li>
-    </ul>
 </div>
